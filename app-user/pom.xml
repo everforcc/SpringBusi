@@ -15,13 +15,13 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>app-user</name>
     <description>公共对象接口</description>
+    <packaging>jar</packaging>
 
 
     <dependencies>
         <dependency>
             <groupId>cn.cc</groupId>
-            <artifactId>busi-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <artifactId>service-user</artifactId>
         </dependency>
     </dependencies>
 

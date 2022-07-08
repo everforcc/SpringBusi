@@ -22,10 +22,10 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- api -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>cn.cc</groupId>
+            <artifactId>common-api</artifactId>
         </dependency>
     </dependencies>
 

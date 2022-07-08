@@ -12,12 +12,17 @@
     </parent>
 
     <groupId>cn.cc</groupId>
-    <artifactId>busi-service</artifactId>
+    <artifactId>service-admin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>busi-service</name>
-    <description>busi-service</description>
+    <name>service-admin</name>
+    <description>service-admin</description>
 
     <dependencies>
+        <dependency>
+            <groupId>cn.cc</groupId>
+            <artifactId>common-config</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>

@@ -23,7 +23,8 @@
     <modules>
         <module>app-admin</module>
         <module>app-user</module>
-        <module>busi-service</module>
+        <module>service-admin</module>
+        <module>service-user</module>
         <module>common-api</module>
         <module>common-config</module>
         <module>common-utils</module>
@@ -31,10 +32,12 @@
 
     <!-- 统一管理版本 -->
     <properties>
+        <spring.busi>0.0.1-SNAPSHOT</spring.busi>
         <java.version>1.8</java.version>
         <!-- spring版本 -->
         <spring.boot>2.2.6.RELEASE</spring.boot>
         <lombok.version>1.18.10</lombok.version>
+        <com.alibaba.fastjson>1.2.58</com.alibaba.fastjson>
     </properties>
 
     <dependencyManagement>
@@ -58,6 +61,41 @@
                 <version>${lombok.version}</version>
                 <optional>true</optional>
             </dependency>
+
+            <!-- json -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${com.alibaba.fastjson}</version>
+            </dependency>
+
+            <!-- 自身的服务版本 -->
+            <dependency>
+                <groupId>cn.cc</groupId>
+                <artifactId>service-admin</artifactId>
+                <version>${spring.busi}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.cc</groupId>
+                <artifactId>service-user</artifactId>
+                <version>${spring.busi}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.cc</groupId>
+                <artifactId>common-api</artifactId>
+                <version>${spring.busi}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.cc</groupId>
+                <artifactId>common-config</artifactId>
+                <version>${spring.busi}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.cc</groupId>
+                <artifactId>common-utils</artifactId>
+                <version>${spring.busi}</version>
+            </dependency>
+            <!-- 自身的服务版本 -->
 
         </dependencies>
     </dependencyManagement>

@@ -1,13 +1,13 @@
-package cn.cc.busiservice;
+package cn.cc.serviceadmin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BusiServiceApplication {
+public class ServiceAdminApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BusiServiceApplication.class, args);
+        SpringApplication.run(ServiceAdminApplication.class, args);
     }
 
 }
