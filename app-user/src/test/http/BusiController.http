@@ -1,3 +1,13 @@
 ### 业务接口
 GET http://localhost:8081/somebusi/sleep
 token: {"name":"name","pas":"pas"}
+
+### 业务接口
+POST http://localhost:8081/somebusi/postdto
+token: {"name":"name","pas":"pas"}
+Content-Type: application/json
+
+{
+  "id": 123,
+  "status": "ON"
+}
